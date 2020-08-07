@@ -19,9 +19,13 @@ automate the build process.
 - dotnet build
 
 It is likely that you need to adjust the project file to your system.
-* how to run the lexer
+
+
+* How to run the lexer
 
 - dotnet run
 
 The step subsumes the previous one. It also runs the generated lexer,
-which takes a single digit from stdin. Tested on an Mac OS.
+which takes a single digit from stdin.
+
+Tested on an Mac OS.
