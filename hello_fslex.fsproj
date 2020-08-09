@@ -4,13 +4,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="hello_fslex.fsl" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="FsLexYacc" Version="10.0.0" />
       <FsLex Include="hello_fslex.fsl">
        <OtherFlags>--unicode</OtherFlags>
         </FsLex>
-        <Compile Include="hello_fslex.fs" />
     </ItemGroup>
+  <ItemGroup>
+    <None Include="hello_fslex.fsl" />
+    <Compile Include="hello_fslex.fs" />
+    <PackageReference Include="FsLexYacc" Version="10.0.0" />
+  </ItemGroup>
 </Project>

@@ -14,14 +14,14 @@ automate the build process.
 - dotnet
 - fslexyacc (installed via nuget)
 
-* How to generate the lexer
+* How to generate the lexer from the command line
 
 - dotnet build
 
 It is likely that you need to adjust the project file to your system.
 
 
-* How to run the lexer
+* How to run the lexer from the command line
 
 - dotnet run
 
@@ -29,3 +29,17 @@ The step subsumes the previous one. It also runs the generated lexer,
 which takes a single digit from stdin and outputs it to stdout.
 
 Tested on an Mac OS.
+
+* How to do the above from Visual Studio
+
+- clone this repo
+
+- create a new solution on VS, from 'Web and Console'. A default hello
+  world project will be created.
+
+- add this repo as an additional project of the solution
+
+- select this project to run or compile (or otherwise, it will be the helloworld that will be worked on )
+
+
+Tested on Visual Studio Community version for Mac.
