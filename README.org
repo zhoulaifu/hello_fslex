@@ -68,6 +68,6 @@ Tested on Visual Studio Community version for Mac.
 
 * How to do it iteractively
 
-- use "fsharpi -r FsLexYacc.Runtile.dll fslex.fs" where the DLL file should be the path of your actual one.
+- use "fsharpi -r FsLexYacc.Runtime.dll fslex.fs" where the DLL file should be the path of your actual one.
 
 Tested on Mac.
