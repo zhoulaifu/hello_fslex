@@ -23,6 +23,11 @@ automate the build process.
 
 It is likely that you need to adjust the project file to your system.
 
+- Alternatively, you can aldo do the same without the project file. In
+  that case, use "dotnet fslex.dll --unicode hello_fslex.fsl" where
+  fslex.dll should point to the path of the DLL file.
+
+Tested on an Mac.
 
 * What happens in the lexer
 The lexer accepts from stdin a single digit, say 9, and transforms it
