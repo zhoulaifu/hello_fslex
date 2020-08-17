@@ -14,11 +14,28 @@ automate the build process.
 - dotnet
 - fslexyacc (installed via nuget)
 
+
+
+
 * How to generate the lexer from the command line
 
 - dotnet build
 
 It is likely that you need to adjust the project file to your system.
+
+
+* What happens in the lexer
+The lexer accepts from stdin a single digit, say 9, and transforms it
+to a string "the lexer recognizes 9".  The variable "lexbuf" denotes a
+global instance of "LexBuffer" Tokenize is a function that maps from
+"LexBuffer" to a result type of Tokenize, here, string (which is the
+type of the result of the lexer's actions).
+
+ In general, if you need to transform a piece of text to something,
+you need to first transform it to LexBuffer (here, we use
+LexBuffer<char>.FromString to do it) so that the lexer can handle it
+with its "Tokenize" function. Then, you use Tokenize to transform that
+LexBuffer to your stuff, e.g. another string.
 
 
 * How to run the lexer from the command line
