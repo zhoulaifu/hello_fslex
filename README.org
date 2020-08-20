@@ -6,7 +6,7 @@ automate the build process.
 * Files
 
 - hello_fslex.fsl: the lexer spec
-- hello_fslex.fsproj: the project file of the .Net Core project
+- (optional) hello_fslex.fsproj: the project file of the .Net Core project
 
 
 * Prerequisite
@@ -66,7 +66,7 @@ Tested on an Mac OS.
 
 Tested on Visual Studio Community version for Mac.
 
-* How to do it iteractively
+* How to do it interactively
 
 - use "fsharpi -r FsLexYacc.Runtime.dll fslex.fs" where the DLL file should be the path of your actual one.
 
